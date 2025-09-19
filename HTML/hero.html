@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta charset para malaman ng browser ang character encoding, basic stuff -->
+  <meta charset="UTF-8">
+  <!-- Para responsive sa mobile devices, adjust width ng page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title ng page na makikita sa tab ng browser -->
+  <title>Contact Us - Discover Ilocos Sur</title>
+  <!-- Link sa CSS file natin, dito naka-store yung design styles -->
+  <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+  <!-- Header section, dito yung title at navbar -->
+  <header>
+    <!-- Main title ng website -->
+    <h1>Discover Ilocos Sur</h1>
+    <!-- Navigation bar para pindutin yung links -->
+    <nav>
+      <a href="index.html">Home</a> <!-- link sa home page -->
+      <a href="contact.html">Contact Us</a> <!-- link sa current page -->
+    </nav>
+  </header>
+
+  <!-- Hero section, yung unang makikita ng user, parang banner -->
+  <section class="hero">
+    <h2>Contact Us</h2> <!-- heading ng hero -->
+    <p>We’d love to hear from you!</p> <!-- short message -->
+  </section>
+
+  <!-- Contact container, dito natin ilalagay main content at aside sa side -->
+  <section class="contact-container">
+    
+    <!-- Main content sa left side, dito yung form at map -->
+    <div class="contact-main">
+      <!-- Contact form section -->
+      <section class="contact-form">
+        <h2>Send Us a Message</h2> <!-- form heading -->
+        <form>
+          <!-- Name input field -->
+          <label>Name:</label><br>
+          <input type="text" name="name"><br><br>
+
+          <!-- Title input field -->
+          <label>Title:</label><br>
+          <input type="text" name="title"><br><br>
+
+          <!-- Message text area -->
+          <label>Message:</label><br>
+          <textarea name="message"></textarea><br><br>
+
+          <!-- Submit button -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Map and contact info -->
+      <section class="map-info">
+        <h2>Find Us</h2> <!-- heading -->
+        <!-- Fake map image, since no embed, pwede din gmaps -->
+       <img src="../IMG/map.jpg" alt="">
+        <!-- Email info -->
+        <p>Email: sample@email.com</p>
+        <!-- Phone info -->
+        <p>Phone: 0912-345-6789</p>
+      </section>
+    </div>
+
+    <!-- Aside section, nasa right side siya, 20% width -->
+    <aside class="sidebar">
+      <!-- Portrait photo -->
+      <img src="../IMG/rain.jpg" alt="Your Portrait" width="150">
+      <!-- Name -->
+      <h3>Quianzon Rain</h3>
+      <!-- Course/section -->
+      <p>BSCS 2C</p>
+      <!-- Personal email -->
+      <p>Email: Quianzonrainrainrain@gmail.com</p>
+    </aside>
+
+  </section>
+
+  <!-- Footer, nasa bottom ng page -->
+  <footer>
+    <p>© 2025 Discover Ilocos Sur</p> <!-- copyright -->
+  </footer>
+
+  <!-- Link sa JS file para sa interactive functions -->
+  <script src="../JS/index.js"></script>
+</body>
+</html>
