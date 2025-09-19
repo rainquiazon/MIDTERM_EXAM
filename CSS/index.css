@@ -1,0 +1,162 @@
+/* Reset some default margins and padding for clean start */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles, line height para di masyadong siksik yung text */
+body {
+  line-height: 2;  /* keeps vertical spacing as you want */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* font style */
+}
+
+/* Header + Navbar styling */
+header {
+  background: #333;   /* color ng navbar */
+  color: white;       /* text color sa loob ng navbar */
+  padding: 10px;      /* height ng navbar */
+  display: flex;      /* para nasa same line yung title at links */
+  justify-content: space-between;  /* space between left (title) and right (links) */
+  align-items: center; /* adjust alignment vertically */
+}
+header h1 {
+  font-size: 20px; /* size ng title */
+}
+
+/* Navbar links styling */
+nav a {
+  color: white; /* text color */
+  margin-left: 15px; /* space sa pagitan ng links */
+  text-decoration: none; /* remove underline default */
+}
+
+nav a:hover { /* kapag hover sa link */
+  text-decoration: underline; /* underline lumabas */
+}
+
+/* Hero section background and text */
+.hero {  
+  background: lightblue; /* kulay ng hero section */
+  text-align: center;    /* center text */
+  padding: 50px 20px;    /* space sa loob ng hero */
+}
+
+.hero h2 {
+  font-size: 30px; /* heading size */
+  margin-bottom: 10px; /* space sa ilalim */
+}
+
+/* Tourist Spots section */
+.spots {
+  padding: 20px; /* space sa paligid */
+  text-align: justify; /* align text left and right */
+  width: 50%; /* limit width for readability */
+}
+
+.spot {
+  display: flex;        /* image and text side by side */
+  margin: 20px;         /* space around each spot */
+}
+
+.spot img {
+  width: 500px;         /* image size */
+  height: auto;         /* height adjust automatically */
+  border-radius: 8px;   /* smooth edges */
+  margin-right: 20px;   /* space between image and text */
+}
+
+.spot-info {
+  max-width: 600px;     /* limit text width */
+  font-size: 115%;      /* slightly bigger text */
+}
+
+/* Products section layout */
+.products {
+  display: flex;        /* side by side layout */
+  flex-wrap: wrap;      /* wrap to next row kapag full */
+  margin-top: 20px;     /* space sa taas */
+}
+
+.product-card {    /* individual product card */
+  width: 20%;       /* para 4 per row */
+  margin: 1%;       /* space sa pagitan */
+  border: 1px solid #ccc; /* border ng card */
+  border-radius: 25px;    /* rounded edges */
+  text-align: center;     /* center text */
+  padding: 10px;          /* inner spacing */
+}
+
+.product-card img {
+  width: 100%;           /* full width ng card */
+  height: 150px;         /* fixed height */
+  object-fit: cover;     /* image hindi mae-stretch */
+  margin-bottom: 10px;   /* space sa ilalim ng image */
+  border-radius: 25px;   /* rounded image */
+}
+
+.product-card button {
+  margin: 5px;           /* space sa pagitan ng buttons */
+  padding: 5px 10px;     /* size ng button */
+  border-radius: 10px;   /* rounded buttons */
+}
+
+.product button:hover {    /* kapag hover sa button */
+  background: #555;       /* kulay ng button pag hover */
+}
+
+/* Contact Page input and map styles */
+.contact-form, .map-info {
+  padding: 20px; /* space sa loob */
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;  /* full width input */
+  padding: 5px; /* inner spacing */
+}
+
+/* Aside styling */
+aside {
+  width: 20%;            /* width ng sidebar */
+  padding: 20px;         /* space inside */
+  background: #f4f4f4;   /* light background */
+}
+
+.contact-container {
+  display: flex;           /* para side by side main + aside */
+  align-items: flex-start; /* align sa top */
+  gap: 20px;               /* space sa pagitan ng main at aside */
+}
+
+.contact-main {
+  width: 75%;              /* main content takes 75% */
+}
+
+.sidebar {
+  width: 20%;              /* aside width */
+  border: 1px solid #ccc;  /* border optional */
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;      /* rounded edges */
+}
+
+aside img {
+  width: 100%;   /* full width ng aside */
+  height: auto;
+  border-radius: 25px; /* rounded portrait */
+}
+
+/* Footer styling */
+footer {
+  background: #333; /* dark background */
+  color: white;     /* text color */
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Map info style */
+.map-info{
+    max-width: 500%;  /* max width para controlled */
+    width: 59x;       /* typo? maybe width: 59% intended */
+}
